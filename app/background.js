@@ -3,11 +3,11 @@
     chrome.runtime.onInstalled.addListener(start);
 
     function start() {
-        chrome.app.window.create('views/window.html',
+        chrome.app.window.create('window.html',
             {
                 'bounds': {
-                    'width': 800,
-                    'height': 680
+                    'width': 1024,
+                    'height': 768
                 },
                 id: 'whatsapp'
             },

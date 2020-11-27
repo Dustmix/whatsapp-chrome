@@ -22,7 +22,7 @@
     webview.addEventListener('contentload', function (e) {
         console.log('Starting poller');
 
-        Utils.downloadText("../guest/trap-notification.js", function(content){
+        Utils.downloadText("../app/trap-notification.js", function(content){
             var code = 'var script = document.createElement("script");' +
                 'script.innerHTML="eval(atob(\''+ btoa(content) + '\'))";' +
                 'document.head.appendChild(script);';

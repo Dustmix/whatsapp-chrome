@@ -11,13 +11,13 @@
     webview.addEventListener('contentload', function (e) {
         webview.executeScript(
             {
-                file: 'guest/guest-injection.js'
+                file: 'app/guest-injection.js'
             }
         );
 
         webview.executeScript(
             {
-                file: 'guest/share-menu.js'
+                file: 'app/share-menu.js'
             }
         )
     });
